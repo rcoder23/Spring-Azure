@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://javadbd.database.windows.net:1433;database=employeedb;user=admin1@javadbd;password=Password123;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: admin1
+    password: Password123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect : org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+  port: 9193
+
+
